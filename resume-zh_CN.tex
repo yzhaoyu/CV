@@ -1,0 +1,87 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{graphicx}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{雍昭宇}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 188-1926-8108}{yongzhaoyu@qq.com}{后端开发工程师}{GitHub @yzhaoyu}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+
+%\section{个人总结}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{重庆大学 (硕士)},   电子与通信工程 (推免)}{2018.09 - 2021.06}
+\begin{itemize}
+  \item 重庆大学A等学业奖学金 (2018和2019年度)
+  \item “兆易创新杯”第十四届中国研究生电子设计竞赛西南分赛区团队二等奖
+  \item 重庆大学第六届研究生智慧城市技术与创意设计大赛一等奖
+\end{itemize}
+\datedsubsection{\textbf{华南农业大学 (本科)},通信工程}{2014.09 - 2018.06}
+\begin{itemize}
+  \item 国家励志奖学金（Top 5\%，2014—2016）
+  \item 华南农业大学2014—2015年度校级二等奖学金，获得“三好学生”荣誉称号
+  \item 华南农业大学2015—2017年度校级三等奖学金
+\end{itemize}
+
+% \section{\faCogs\ IT 技能}
+\section{专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 熟悉Golang，了解Golang内部运行机制，熟悉goroutine、channel和锁等机制。
+  \item 熟悉Python，熟悉Django web开发框架、MVC模型和RESTful API的开发。
+  \item 熟悉常用数据结构与算法，能够实现哈希表、链表、队列、栈、二叉树等数据结构。
+  \item 熟悉操作系统和TCP/IP协议。
+  \item 了解微服务与RPC，有一定的使用经验。
+  \item 了解Linux网络编程、Linux系统及常用命令和Docker容器。
+  \item 熟悉Redis，了解MySQL关系型数据库，了解NSQ和Kafka消息队列。
+\end{itemize}
+
+% \end{itemize}
+
+\section{实习经历}
+\datedsubsection{\textbf{腾讯科技(深圳)有限公司 | Tencent},   后端开发工程师}{2020.04-2020.09}
+\begin{onehalfspacing}
+本人任职于腾讯增值研发部门，职位是后端开发，负责QQ黄钻业务、QQ会员等与增值营收相关的会员包月服务后台架构设计和开发维护，主要参与项目：
+\begin{itemize}
+  \item \textbf{天璇活动平台、天璇活动平台监控告警系统。}
+  \item 技术选型：Golang、tRPC、MySQL、Redis、Protobuf等。
+  \item 主要工作：1.设计天璇活动平台，将其分为engine、alarm、接入层等多个模块，进行服务的拆分，每个模块就是一个服务。2.使用Golang构建天璇活动平台后端，通过tRPC、Protobuf与前端、其他后端进行交互。3.设计数据库表，使用MySQL存储活动名称、活动ID、活动归属人等数据，将活动配置、每日消耗等数据存储到Redis中。4.为保证活动平台可靠运行，开发了配套的监控告警系统，分为两个部分：库存监控告警和线上错误实时告警，当库存不足或线上有错误时通过企业微信提供的API实现自动建群通知活动归属人。
+  \item \textbf{QQ618电商直播带货平台。}
+  \item 技术选型：Golang、tRPC、MySQL、Redis、Kafka、Protobuf等。
+  \item 主要工作：1.使用tRPC开发直播礼物交易系统和登陆服务两个服务。
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{重庆博尼施科技有限公司 | Burnish},    后端开发工程师}{2019.09-2019.12}
+\begin{onehalfspacing}
+公司属于车联网监控服务提供商，为新能源和传统能源车提供满足国家标准即国五、国六标准和地方标准的数据上报、数据转发和车辆的监控服务，主要参与项目：
+\begin{itemize}
+  \item \textbf{东风新能源汽车监控系统和数据网关。}
+  \item 技术选型：Golang、Python、Django、Django REST framework、MySQL、Redis、Kafka等。
+  \item 主要工作：1.使用Python、Django和Django REST framework采用前后端分离的方式，构建一个高可用、高并发、高负载的系能源汽车监控系统。2.使用Golang编写了一套数据网关，用来接收国六标准数据、新能源汽车数据，负责数据的接收、数据包分割和验证、向Kafka消息队列集群发送数据。3.使用Docker部署新能源汽车监控系统与数据网关，Kuebrnetes进行容器的编排与管理。
+\end{itemize}
+\end{onehalfspacing}
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
