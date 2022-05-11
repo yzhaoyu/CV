@@ -16,16 +16,17 @@
 
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
-\contactInfo{(+86) 188-1926-8108}{yongzhaoyu@qq.com}{后端开发工程师}{\textit{https://github.com/yzhaoyu}}
-% {E-mail}{mobilephone}
+\contactInfo{年龄：26}{电话：188-1926-8108}{邮箱：yongzhaoyu@qq.com}{意向岗位：后端开发工程师}
+% {E-mail}{mobilephone}x
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+% {\textit{https://github.com/yzhaoyu}}
 
 %\section{个人总结}
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
-\datedsubsection{\textbf{重庆大学 (硕士)},电子与通信工程 (推免)}{2018.09 - 2021.06}
+\datedsubsection{\textbf{重庆大学 (推免硕士)},电子与通信工程}{2018.09 - 2021.06}
 \begin{itemize}
   \item 重庆大学A等学业奖学金 (2018和2019年度)
   \item “兆易创新杯”第十四届中国研究生电子设计竞赛西南分赛区团队二等奖
@@ -34,51 +35,83 @@
 \datedsubsection{\textbf{华南农业大学 (本科)},通信工程}{2014.09 - 2018.06}
 \begin{itemize}
   \item 国家励志奖学金（Top 5\%，2014—2016）
-  \item 华南农业大学2014—2015年度校级二等奖学金，获得“三好学生”荣誉称号
-  \item 华南农业大学2015—2017年度校级三等奖学金
+  \item 多次获得校级二等和三等奖学金，获得“三好学生”荣誉称号
+  \item 获得CET6级证书
 \end{itemize}
 
 % \section{\faCogs\ IT 技能}
 \section{专业技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item 熟悉Golang，了解Golang内部运行机制，熟悉goroutine、channel和锁等机制。
-  \item 熟悉Python，熟悉Django web开发框架、MVC模型和RESTful API的开发。
-  \item 熟悉常用数据结构与算法，能够实现哈希表、链表、队列、栈、二叉树等数据结构。
-  \item 熟悉操作系统和TCP/IP协议。
-  %\item 了解微服务与RPC，有一定的使用经验。
-  \item 了解Linux网络编程、Linux系统及常用命令和Docker容器。
-  \item 熟悉Redis，了解MySQL关系型数据库，了解NSQ和Kafka消息队列。
+  \item 熟悉Golang，熟悉goroutine、channel、锁和Golang内部运行机制。
+  \item 熟悉Python、Django和RESTful API的开发。
+  \item 熟悉常用数据结构与算法，能够实现哈希表、链表、队列、栈等数据结构。
+  \item 熟悉操作系统、TCP/IP协议、OAuth2.0协议、OpenAPI3.0规范。
+  \item 熟悉Redis和MySQL。
+  \item 了解Kafka消息队列、Terraform、bazel、Linux网络编程和Docker容器。
+  %\item 了解Kafka消息队列、Terraform和bazel。
 \end{itemize}
 
-% \end{itemize}
+\section{工作经历}
+\datedsubsection{\textbf{腾讯科技(深圳)有限公司 | Tencent},后端开发工程师}{2021.07-至今}
+\begin{onehalfspacing}
+本人就职于腾讯文档部门，后端开发岗位，负责腾讯文档开放平台的后台服务架构设计和开发维护，参与项目如下：
+\begin{itemize}
+  \item \textbf{腾讯文档开放平台网关层服务、OAuth2.0授权服务和OpenAPI的设计、开发与维护}
+  \item \role{技术栈  Golang,  tRPC,  MySQL,  Redis,  Protobuf,  Terraform}
+  \item 项目描述: 基于Golang实现的开放平台微服务网关、腾讯文档OAuth2.0授权服务，开发的OpenAPI服务可以实现对用户文档的管理和读写。
+  \item 主要工作: 
+\begin{enumerate}
+  \item 从零搭建腾讯文档开放平台网关层服务，独立完成网关层服务的技术选型与总体框架的设计，实现了从RESTful HTTP API到trpc的转发和API访问权限控制，可承受单日流量最高可达100K，平均耗时在50ms以内，成功率为99.95\%。
+  \item 开发腾讯文档文件管理与各品类文档的编辑OpenAPI，包括DriveAPI（文档管理）、DocAPI、SmartsheetAPI（文档内容读写）等，通过功能完善的OpenAPI，腾讯文档目前接入重点客户数超过十位。
+  \item 从零搭建腾讯文档基于OAuth2.0协议的授权服务，采用授权码方式进行用户身份验证和获取用户授权，支持微信和QQ账号授权，腾讯文档开放平台OpenAPI基于OAuth服务进行鉴权。
+  \item 提升腾讯文档开放平台OpenAPI各服务的稳定性，保障服务可用性达到99.9\%，各接口平均耗时在50ms以内，单元测试覆盖率达到75\%，E2E端口测试覆盖率达到100\%。
+\end{enumerate}
+\end{itemize}
+\begin{itemize}
+  \item \textbf{基于OpenAPI自动生成多语言SDK与API文档的工业化实践}
+  \item \role{技术栈  Golang,  OpenAPI3.0,  Protobuf,  openapi-generator}
+  %\item 项目描述：此项目是基于OpenAPI3.0规范自动化生成多语言的SDK与API文档。
+  \item 主要工作：
+\begin{enumerate}
+  \item 基于OpenAPI3.0规范和openapi-generator生成多语言SDK，目前已提供Golang、Python和JavaScript版本SDK，提高用户接入效率。
+  \item 开发基于OpenAPI3.0规范自动化生成API文档，极大提升了腾讯文档开放平台开发者文档的迭代速度和文档描述的准确性，减少了50\%的人力维护成本。
+  \item 构建生成多语言SDK的工业化研发体系，利用自动化流水线的持续集成平台避免人工介入与错误流程，实现多语言SDK从打包、编译、发布的全自动化流程。
+\end{enumerate}
+\end{itemize}
+\end{onehalfspacing}
 
-\section{实习经历}
 \datedsubsection{\textbf{腾讯科技(深圳)有限公司 | Tencent},后端开发工程师}{2020.04-2020.09}
 \begin{onehalfspacing}
-本人任职于腾讯增值研发部门，岗位是后端开发，负责QQ黄钻业务、QQ会员等与增值营收相关的会员包月服务后台架构设计和开发维护，主要参与项目：
+本人在腾讯增值研发部门担任后端开发，负责QQ增值营收相关的后台架构的设计和开发，参与项目如下：
 \begin{itemize}
-  \item \textbf{天璇活动平台、天璇活动平台监控告警系统。}
+  \item \textbf{天璇活动平台监控告警系统}
   \item \role{技术选型  Golang,  tRPC,  MySQL,  Redis,  Protobuf}{}
-  \item 主要工作：1.使用Golang构建天璇活动平台后端，通过tRPC、Protobuf与前端、其他后端进行交互。2.设计数据库表，使用MySQL存储活动名称、活动ID、活动归属人等数据，将活动配置、每日消耗等数据存储到Redis中。3.为保证活动平台可靠运行，开发了配套的监控告警系统，分为两个部分：库存监控告警和线上错误实时告警，当库存不足或线上有错误时通过企业微信提供的API实现自动建群通知活动归属人。
+  \item 主要工作：基于Golang构建团队监控告警系统，具有库存监控告警和线上错误实时告警功能，实现邮件通知与企业微信拉群功能。
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{重庆博尼施科技有限公司 | Burnish},后端开发工程师}{2019.09-2019.12}
+\datedsubsection{\textbf{重庆博尼施科技有限公司 | Burnish},后端开发工程师}{2019.05-2019.12}
 \begin{onehalfspacing}
-公司属于车联网监控服务提供商，为新能源和传统能源车提供满足国家标准即国五、国六标准和地方标准的数据上报、数据转发和车辆的监控服务，主要参与项目：
+公司为车联网监控服务提供商，为新能源和传统能源车提供满足国家标准和地方标准的数据上报、数据转发和车辆的监控服务，参与项目如下：
 \begin{itemize}
-  \item \textbf{东风新能源汽车监控系统和数据网关。}
-  \item \role{技术选型  Golang,  Python,  Django,  Django REST framework,  MySQL,  Redis,  Kafka}{}
-  \item 主要工作：1.使用Python、Django和Django REST framework采用前后端分离的方式，构建一个高可用、高并发、高负载的新能源汽车监控系统。2.使用Golang编写了一套数据网关，用来接收国六标准数据、新能源汽车数据，负责数据的接收、数据包分割和验证、向Kafka消息队列集群发送数据。3.使用Docker部署新能源汽车监控系统与数据网关，Kubernetes进行容器的编排与管理。
+  \item \textbf{东风新能源汽车监控系统和数据网关项目}
+  \item \role{技术选型  Golang,  Python,  Django,  Django REST framework,  MySQL,  Redis,  Kafka}
+  \item 主要工作：基于Python和Django开发新能源汽车监控系统，基于Golang构建监控系统数据网关，负责数据的接收、校验并向Kafka消息队列集群发送数据。
 \end{itemize}
 \end{onehalfspacing}
 
-\section{个人总结}
+\section{科研论文}
 \begin{enumerate}
-  \item 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，热爱互联网行业。
-  \item 熟悉Golang和Python，最近一年一直在做WEB方面的研发工作。
+  \item 《基于微信小程序的智能公交查询系统设计》
+  \item 《基于容器编排的高并发Web系统技术研究》
 \end{enumerate}
+
+%\section{个人总结}
+%\begin{enumerate}
+%  \item 本人有较好的英语听说读写能力，获得CET6级证书，对工作负责、自我驱动力强、热爱钻研技术。
+%  \item 对于问题有自己独特的见解和思考，有较强的业务理解能力和良好的沟通能力。
+%\end{enumerate}
 
 % \begin{onehalfspacing}
 % \end{onehalfspacing}
