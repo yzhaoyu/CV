@@ -1,6 +1,6 @@
 % !TEX program = xelatex
 
-\documentclass{resume}
+\documentclass{CV}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
@@ -10,50 +10,69 @@
 \name{Zhaoyu Yong}
 
 \basicInfo{
-  (412) 996-7548 $\bullet$
+  (+86) 188-1926-8108 $\bullet$
   \href{mailto:yongchiuyu@gmail.com}{yongchiuyu@gmail.com} $\bullet$
   %\href{https://github.com/Trinkle23897}{GitHub (\textbf{1.5k} followers)} $\bullet$
   \href{https://www.linkedin.com/in/zhaoyu-yong-a84963150/}{Linkedin}
 }
 
+\section{Summary}
+\begin{itemize}
+    \item {\textbf{Job Intention}}: Backend Development.
+    \item Interested in blockchain and crypto currency.
+\end{itemize}
+
 \section{Education}
 \datedsubsection{\textbf{\href{https://www.cqu.edu.cn/}{Chongqing University}}, Chongqing, China}{09/2018 -- 06/2021}
-Master in Electronic and Communication Engineering, College of Microelectronics and Communication Engineering
+Master in Electronic and Communication Engineering, School of Microelectronics and Communication Engineering
 \datedsubsection{\textbf{\href{https://www.scau.edu.cn/}{South China Agricultural University}}, Guangzhou, Guangdong, China}{09/2014 -- 06/2018}
-B.Eng. in Communication Engineering, GPA: 4.0/5, Rank: 15/100
+B.Eng. in Communication Engineering, School of Electronic Engineering
+
+\section{Skills}
+\begin{itemize}
+    \item Extensive experience with Golang, concurrency model, gabarge collection and runtime of golang.
+    \item Experience with Python, Django and RESTful API.
+    \item Proficiency with operating system, data instructure and computer network.
+    \item Experience with MySQL, Redis, Kafka, Git and Docker.
+    \item Familiar with Terraform, bazel and Kubernetes.
+\end{itemize}
 
 \section{Experience}
-\datedsubsection{\textbf{\href{https://www.tencent.com/en-us/}{Tencent}}}{Shenzhen, China}
+\datedsubsection{\textbf{\href{https://www.tencent.com/en-us/}{Tencent Technology (Shenzhen) Co., Ltd}}}{Shenzhen, China}
 \datedsubsection{Backend Development Engineer, Tencent Docs}{07/2021 -- Now}
 \begin{itemize}
     \item Worked in Tencent Docs building the gateway service of open platform, forwarding the RESTful HTTP API traffic to RPC traffic and uniform API access permission control.
     \item Developed multiple OpenAPI such as DriveAPI(document management), DocAPI and SmartsheetAPI(online document editing) and so on.
-    \item Based on the authorization code mode of OAuth2.0 to build authorization service to verify users' identity and obtain users' authorization. 
-    \item From code review, Kubernetes, unit test and E2E test coverage dimension to ensure the microservice safety and stability.
+    \item Built authorization service to verify users' identity and obtain users' authorization based on the authorization code mode of OAuth2.0.
+    \item Ensured the microservice safety and stability from the code review, Kubernetes, unit test and E2E test.
     \item Used OpenAPI3.0 standard, Protobuf and openapi-generator to automatically generate multi-language SDK and OpenAPI document to improve user access efficiency and reduce labor maintenance costs.
 \end{itemize}
 
-\datedsubsection{\textbf{\href{https://burnish.cn/}{Burnish}}}{Shenzhen, China}
-\datedsubsection{Backend Development Engineer, Burnish}{04/2020 -- 09/2020}
+\datedsubsection{\textbf{\href{https://www.tencent.com/en-us/}{Tencent Technology (Shenzhen) Co., Ltd}}}{Shenzhen, China}
+\datedsubsection{Backend Development Engineer(Internship), Tencent QQ}{04/2020 -- 09/2020}
 \begin{itemize}
-    \item Developed a online monitor and alarm system to monitor online error with function of email notification.
+    \item Developed an online monitor and alarm system to monitor online error with function of email notification.
 \end{itemize}
 
-\datedsubsection{\textbf{\href{https://www.tencent.com/en-us/}{Tencent QQ}}}{Chongqing, China}
-\datedsubsection{Backend Development Engineer, Tencent QQ}{04/2020 -- 09/2020}
+\datedsubsection{\textbf{\href{https://burnish.cn/}{Chongqing Bonishi Technology Co., Ltd}}}{Chongqing, China}
+\datedsubsection{Backend Development Engineer(Internship), Burnish}{05/2019 -- 12/2019}
 \begin{itemize}
-    \item Developed new energy vehicle monitoring system based on Python and Django, and monitoring system data gateway was constructed based on Golang, which was responsible for receiving, verifying and sending data to Kafka message queue cluster.
+    \item Developed new energy vehicle monitoring system based on Python and Django
+    \item Built a data gateway base on Golang, which was responsible for receiving, verifying and sending data to Kafka message queue cluster.
+\end{itemize}
+
+\section{Adwards and Honors}
+\begin{itemize}
+    \item The 14th China Graduate Electronic Design Competition southwest division team second prize
+    \item The first prize of the 6th Smart City Technology and Creative Design Competition for Graduate students of Chongqing University
+    \item Grade A Academic Scholarship of Chongqing University (2018 and 2019)
+    \item National Encouragement Scholarship (South China Agricultural University, Top 5\%, 2014-2016)
 \end{itemize}
 
 \section{Publications}
 \begin{itemize}
-    \item \textbf{Zhaoyu Yong}, ``Research on High Concurrency Web System technology based on Container Orchestration,''
+    \item \textbf{Zhaoyu Yong}, Yusheng Jiang, ``Research on High Concurrency Web System technology based on Container Orchestration,'' Master's Thesis
     \item \textbf{Zhaoyu Yong}, Xiaoling Deng,  ``Design of Intelligent Bus Query System Based on Wechat Mini Program,'' in \textbf{Computers And Network}
 \end{itemize}
-
-\section{Skills}
-\textbf{Programming Languages:} \small Golang, Python, Bash, SQL (ranked by proficiency)
-
-\textbf{Tools and Frameworks:} \small MySQL, Redis, Kafka, Git, Django, Docker, Kubernetes, Bazel
 
 \end{document}
